@@ -1,0 +1,12 @@
+n = str (input('olá qual o seu nome? '))
+d = float (input (f'okay! {n}, que horas são? em formato de 24 horas de por favor'))
+if d >= 00.00 and d <= 11.59:
+    print(f'okay bom dia! {n}')
+else:
+    if d >= 12.00 and d <= 17.59:
+        print(f'okay boa tarde! {n}')
+    else: 
+        if d >= 18.00 and d <= 23.59:
+            print(f'okay boa noite! {n}')
+        else: 
+            print(f'{n} esse número não está certo :(')
