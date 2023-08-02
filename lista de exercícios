@@ -1,0 +1,35 @@
+"""  1 -Escreva um programa que exiba quantos pontos um time de futebol possui em certo campeonato, sabendo-se que uma
+vitória vale 3 pontos, um empate vale 1 ponto e uma derrota não vale ponto algum. Os números de vitórias, empates e
+derrotas serão lidos do teclado.
+
+RESPOSTA
+
+v = int (input ("coloque a quantidade de vitórias ")) *3
+e =  int( input("coloque a quantidade de empates "))
+d = int (input("coloque a quantidade de derrotas ")) *0
+
+time = v+e 
+print(time)"""
+
+
+""" 2- Escreva um programa que leia o horário de entrada e o horário de saída de um aluno na biblioteca e exiba o seu tempo de
+permanência, no formato hh:mm. Cada horário é representado por dois inteiros (horas e minutos). Dica: 130 minutos → 2
+horas (130 // 60) e 10 minutos (130 % 60)
+
+RESPOSTA
+
+entrada = float(input("qual foi o horário de entrada?"))
+saida = float(input("qual é o horário de saida?"))
+tempo_de_permanencia = saida - entrada 
+print("%.2f" % round(tempo_de_permanencia,2))"""
+
+"""3- Escreva um programa que leia a quantidade de alunos de uma turma e a quantidade de alunos que foram aprovados. O
+programa deve exibir o percentual de alunos aprovados.
+
+RESPOSTA 
+
+x = int (input('escreva a qauntidade de alunos na turma'))
+y = int (input('escreva a quantidade de alunos aprovados'))
+
+d = y/x *100
+print('a porcentagem de alunos aprovados é', d) """
