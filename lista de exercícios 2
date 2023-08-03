@@ -1,0 +1,17 @@
+"""1) Escreva um programa que leia do teclado as duas notas de um aluno, calcule e exiba a média aritmética das notas (calculada
+por uma função). Exiba também a situação do aluno: aprovado, se média aritmética maior ou igual a 5.0 ou reprovado em
+caso contrário.
+
+RESPOSTA"""
+
+x = int (input('escreva a nota do primeiro aluno'))
+y =int (input('escreva a nota do segundo aluno'))
+ 
+def media_aritimetica (x,y):
+   f= (x+y)/ 2 
+   return f 
+
+if media_aritimetica(x, y) >= 5 :
+   print("alunos aprovados!! suas medias são",media_aritimetica(x, y))
+else:
+   print("alunos reprovados :( suas medias são",media_aritimetica(x, y)) 
