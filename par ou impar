@@ -1,0 +1,7 @@
+x = (int(input('digite um numero: ')))
+a= x % 2
+if a == False :
+ print( 'é par') 
+          
+else:
+ print('é impar')
