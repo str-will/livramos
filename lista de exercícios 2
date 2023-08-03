@@ -16,10 +16,15 @@ if media_aritimetica(x, y) >= 5 :
 else:
    print("alunos reprovados :( suas medias são",media_aritimetica(x, y)) 
 
+**** o dois era só pra adicionar parabéns no primeiro codigo*****
 
-"""3) Escreva um programa que leia do teclado as duas notas de um aluno, calcule e exiba a média aritmética das notas (calculada
+
+""" 3) Escreva um programa que leia do teclado as duas notas de um aluno, calcule e exiba a média aritmética das notas (calculada
 por uma função). Exiba também a situação do aluno: aprovado, se média aritmética maior ou igual a 5.0 e nenhuma das duas
-notas inferior a 3.0 ou reprovado em caso contrário."""
+notas inferior a 3.0 ou reprovado em caso contrário.
+
+
+RESPOSTA"""
 
 x = int (input('escreva a nota do primeiro aluno'))
 y =int (input('escreva a nota do segundo aluno'))
@@ -27,8 +32,13 @@ y =int (input('escreva a nota do segundo aluno'))
 def media_aritimetica (x,y):
    f= (x+y)/ 2 
    return f 
+if x <= 3 or y <= 3:
+    print('Aluno com nota a 3 ou menor não passa nunca !!!')
 
-if media_aritimetica(x, y) >= 5 and x <= 3 or y <= 3:
-   print("alunos aprovados!! suas medias são",media_aritimetica(x, y))
 else: 
-   print("alunos reprovados :( suas medias são",media_aritimetica(x, y)) 
+    if media_aritimetica(x, y) >= 5:
+        print("alunos aprovados!! suas medias são",media_aritimetica(x, y))
+    else: 
+        print("alunos reprovados :( suas medias são",media_aritimetica(x, y))  
+
+
