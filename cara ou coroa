@@ -2,11 +2,19 @@ import random
 x = str(input('jogador um cara ou coroa?'))
 c = str(input('jogador dois cara ou coroa?'))
 my = (x,c)
-
 Y = random.choice(my)
-     
-if Y == x:
-    print('Jogador um venceu!')
+def sorteio(my,Y,x,c):
+    x = str(input('jogador um cara ou coroa?'))
+    c = str(input('jogador dois cara ou coroa?'))
+    my = (x,c)
+    Y = random.choice(my)
+if Y == x: 
+            print('Jogador um venceu!')
 else:
-    print('Jogador dois venceu!')
-    
+       
+        print('Jogador dois venceu!')
+w = str(input('quer jogar denovo?'))
+if w.lower() in ['s', 'sim']:
+            sorteio(my,Y,x,c)
+else:
+            print('Fim de jogo.')
