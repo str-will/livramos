@@ -1,0 +1,68 @@
+""" coletar dados pra enviar uma carta"""
+
+print("\nOlá, coloque os dados necesários para o envio da sua carta!\n")
+input('')
+nome = input('\ncoloque seu nome completo:\n')
+telefone = input('\ncoloque seu número de telefone completo (DDD incluso): \n')
+rua = input('\nColoque o nome de sua rua completo:\n ')
+complemento = input ('\nColoque algum complemento se for necessário (EX:numero da casa, apartamento e etc)\n')
+cep = input('\nColoque seu CEP completo: \n')
+cidade =input('\nColoque o nome de sua cidade: \n')
+UF = input('\nColoque sua UF (unidade federativa): \n')
+pais = input('\nColoque o seu país:\n ')
+x = input (f"\n{nome}, está correto?\n REMETENTE:{nome}\n  TELEFONE:{telefone}\n RUA:{rua}\n COMPLEMENTO:{complemento}\n CEP:{cep}\n CIDADE:{cidade}\n UF:{UF}\n PAIS:{pais}\n")
+
+    
+while  x.lower() in ['não','n','ñ','nop',' não']:
+
+    
+    nome = input('\ncoloque seu nome completo:\n')
+    telefone = input('\ncoloque seu número de telefone completo (DDD incluso): \n')
+    rua = input('\nColoque o nome de sua rua completo:\n ')
+    complemento = input ('\nColoque algum complemento se for necessário (EX:numero da casa, apartamento e etc)\n')
+    cep = input('\nColoque seu CEP completo: \n')
+    cidade =input('\nColoque o nome de sua cidade: \n')
+    UF = input('\nColoque sua UF (unidade federativa): \n')
+    pais = input('\nColoque o seu país:\n ')
+    x = input (f"{nome}, está correto?\n REMETENTE:{nome}\n  TELEFONE:{telefone}\n RUA:{rua}\n COMPLEMENTO:{complemento}\n CEP:{cep}\n CIDADE:{cidade}\n UF:{UF}\n PAIS:{pais}\n")
+
+
+
+
+
+
+
+print(f"\nOkay,{nome} agora eu preciso das informações do seu destinatário\n")
+input('')
+
+destinatario2 =  input('\nColoque o nome do destinatário: \n ')
+telefone2 = input('\nColoque o numéro de telefone completo dele (DDD incluso) \n ')
+rua2 = input('\nColoque o nome da rua completo:\n ')
+complemento2 = ('\nColoque algum complemento se for necessário (EX:numero da casa, apartamento e etc)\n')
+cep2 =  input('\nColoque o CEP do destinatário\n ')
+cidade2 = input('\nColoque sua cidade:\n ')
+UF2 = input('\nColoque sua UF (união federativa):\n ')
+pais2 =  input('\nColoque o seu país:\n ')
+
+y = input(f"{nome}, está correto?\n DESTINATÁRIO:{destinatario2}\n"
+     " TELEFONE:{telefone2}\n RUA:{rua2}\n COMPLEMENTO:{complemento2}\n CEP:{cep2}\n CIDADE:{cidade2}\n UF:{UF2}\n"
+     "PAIS:{pais2}")
+
+
+while  y.lower() in ['não','n','ñ','nop',' não']:
+
+    
+   destinatario2 =  input('\nColoque o nome do destinatário: \n ')
+   telefone2 = input('\nColoque o numéro de telefone completo dele (DDD incluso) \n ')
+   rua2 = input('\nColoque o nome da rua completo:\n ')
+   complemento2 = ('\nColoque algum complemento se for necessário (EX:numero da casa, apartamento e etc)\n')
+   cep2 =  input('\nColoque o CEP do destinatário\n ')
+   cidade2 = input('\nColoque sua cidade:\n ')
+   UF2 = input('\nColoque sua UF (união federativa):\n ')
+   pais2 =  input('\nColoque o seu país:\n ')
+
+   y = input(f"{nome}, está correto?\n DESTINATÁRIO:{destinatario2}\n TELEFONE:{telefone2}\n RUA:{rua2}\n COMPLEMENTO:{complemento2}\n CEP:{cep2}\n CIDADE:{cidade2}\n UF:{UF2}\n PAIS:{pais2}")
+
+
+
+print('Que bom! sua carta será enviada com sucesso!!!')
