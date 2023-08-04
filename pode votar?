@@ -1,0 +1,16 @@
+x= input ('qual o seu nome?')
+y = int(input(f'okay, {x} qual a sua idade?'))
+if y >= 60:
+    print('você pode votar! (se quiser!!!!)')
+else :
+    if y>=16 and y<18:
+        print('você pode votar! (se quiser!!!!)')
+    else:   
+           if y>=18 and y <=60 :
+                print('você TEM que votar!!!!!!')
+           else:
+               if y<16:
+                   print('você NÃO PODE votar!!!!!!')
+               else : 
+                   print('valor invalido!')
+                        
