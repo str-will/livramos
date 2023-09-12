@@ -1,0 +1,30 @@
+import math
+''' cordenadas x e y'''
+xA=float(input('me de as cordenadas do ponto A em x (no plano cartesiano)')) 
+yA=float(input('me de as cordenadas do ponto A em y (no plano cartesiano)')) 
+xB=float(input('me de as cordenadas do ponto B em x (no plano cartesiano)')) 
+yB=float(input('me de as cordenadas do ponto B em y (no plano cartesiano)'))
+xC=float(input('me de as cordenadas do ponto C em x (no plano cartesiano)'))
+yC=float(input('me de as cordenadas do ponto C em y (no plano cartesiano)'))
+
+
+def distancia_2p (xa,ya,xb,yb) :
+    d=math.sqrt( (xa-xb)**2 + (ya-yb)**2.)
+    return d
+  
+def perimetro (xA,yA,xB,yB,xC,yC) :
+  dAB= distancia_2p(xA, yA, xB, yB) 
+  dAC= distancia_2p(xA, yA, xC, yC) 
+  dBC=distancia_2p(xB, yB, xC, yC)  
+  return dAB+dAC+dBC
+
+pp= perimetro(xA, yA, xB, yB, xC, yC)
+
+def moldura(pp):
+    print('=============================================================')
+    print('=============================================================')
+    return
+
+moldura(pp)
+print('\to perimetro desse triangulo é de %.2f'%(pp) ) 
+moldura(pp)
