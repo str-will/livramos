@@ -1,0 +1,33 @@
+def moldura(pp):
+    print('=============================================================')
+    print('=============================================================')
+    return
+#lê a matricula, nota da p1 nota da p2 nota do t1 nota do t2 e exibe matricula media prova e media trabalho final
+def media_pond (P1,P2,T1,T2):
+      x =((P1*T1)+(P2*T2))/P1+P2
+      return x 
+provas= input('qual a nota tirada nas duas primeiras provas? (p1,p2)')
+trabalhos= int(input('qual a nota tirada nos trabalhos?(t1,t2)'))
+p1= provas[0:2]
+p2= provas[3:5]
+media_pond(p1, p2, T1, T2)
+
+
+"""2. Faça um programa, utilizando as funções abaixo, que leia as seguintes informações de um aluno: matrícula, nota
+da primeira prova, nota da segunda prova, nota do primeiro trabalho e nota do segundo trabalho.
+Este programa deverá exibir: matrícula, média da prova, média do trabalho e média final do aluno.
+A primeira prova tem peso 2 e a segunda peso 5.
+O primeiro trabalho tem peso 2 e o segundo peso 4.
+Para o cálculo da média final: média das provas tem peso 7 e média dos trabalhos tem peso 3.
+O programa deve exibir um cabeçalho com o nome do programador emoldurado por duas linhas e a mensagem
+abaixo de finalização
+======================
+======================
+Tenha um bom dia!!
+======================
+======================
+a) Faça uma função que calcule e retorne a média ponderada entre dois valores reais. Os valores e os respectivos
+pesos serão recebidos com parâmetros pela função.
+b) Faça uma função que receba uma string e exiba as duas linhas de moldura, o texto e novamente as duas linhas
+de moldura""""
+    
