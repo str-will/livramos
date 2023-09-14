@@ -6,11 +6,13 @@ def moldura(pp):
 def media_pond (P1,P2,T1,T2):
       x =((P1*T1)+(P2*T2))/P1+P2
       return x 
-provas= input('qual a nota tirada nas duas primeiras provas? (p1,p2)')
+p1= int(input('qual a nota tirada na primeira provas? '))
+p2= int(input('qual a nota tirada na segunda provas? '))
 trabalhos= int(input('qual a nota tirada nos trabalhos?(t1,t2)'))
-p1= provas[0:2]
-p2= provas[3:5]
-media_pond(p1, p2, T1, T2)
+
+print(media_pond(p1, p2, 2, 5))
+
+
 
 
 """2. Faça um programa, utilizando as funções abaixo, que leia as seguintes informações de um aluno: matrícula, nota
