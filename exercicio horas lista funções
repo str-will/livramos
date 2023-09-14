@@ -8,3 +8,10 @@ h = int(input('quantos minutos são???'))
 print(horario (h))
 
 # letra b 
+
+def convert_horario(m):
+    hr= m[0:2]
+    mn=m[3:5]
+    x = (hr*60)+mn
+    print('são %d minutos'%(x))
+    return
