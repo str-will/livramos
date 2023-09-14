@@ -1,0 +1,10 @@
+# letra a 
+def horario (h):
+    horas= h/60
+    minutos= h%60
+    x = print('agora são %d horas e %d minutos'%(horas,minutos))
+    return x
+h = int(input('quantos minutos são???'))
+print(horario (h))
+
+# letra b 
