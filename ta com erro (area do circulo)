@@ -1,6 +1,6 @@
 r1=float(input('coloque o raio do maior circulo:'))
 def area_circulo (r):
-    a= 3,14 * r**2
+    a= 3.14 * r**2
     return a 
 
 def circulos(r1):
@@ -9,8 +9,8 @@ def circulos(r1):
    verde= area_circulo(r1)
    amarelo= area_circulo(r2)
    preto= area_circulo(r3)
-   return verde,amarelo, preto
    R1= verde-(amarelo+preto)
    R2= amarelo-preto
-   resposta = print(' a area verde é de: %.2f         a area amarela é de:%.2f         a area preta é de: %.2f'%(R1,R2,preto))
-   return resposta 
+   print(' a area verde é de: %.2f         a area amarela é de:%.2f         a area preta é de: %.2f'%(R1,R2,preto))
+   return 
+circulos(r1)
