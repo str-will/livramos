@@ -1,0 +1,19 @@
+"""Um brinquedo de um parque precisa controlar a entrada. Menores de idade, com mais de 1,50m
+podem entrar, mas os com altura menor que 1,50 estão proibidos. Os maiores de idade podem
+entrar. Para os de terceira idade é bom alertar para os perigos da velocidade!
+Faça uma função que receba a idade de uma pessoa e exiba, a mensagem adequada, isto é, "pode
+entrar", "não pode entrar", "cuidado com a velocidade". Lembre-se que os menores de idade
+(apenas eles) devem informar, também, sua altura"""
+
+idade= int(input('qual a sua idade?'))
+if idade >= 18 and idade <= 59:
+    print('pode entrar aproveita')
+elif idade >= 18 and idade >= 60:
+    print('pode entrar!Mas cuidado com a velocidade')
+else:
+     altura= int(input('qual sua altura? (colocar em cm)'))
+     if altura > 150:
+       print('pode entrar aproveita')
+     else:
+         print('ta proibido')
+           
