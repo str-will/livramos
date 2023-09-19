@@ -1,0 +1,65 @@
+def calcDistancia (x1,y1,x2,y2):
+    d= ((x1-x2)**2 + (y1-y2)**2)**0.5
+    return d
+
+def calcPerimetro(xA,yA,xB,yB,xC,yC):
+    dAB = calcDistancia(xA,yA,xB,yB)
+    dBC = calcDistancia(xB,yB,xC,yC)
+    dAC = calcDistancia(xA,yA,xC,yC)
+    return dAB+dAC+dBC
+
+def exibeMold():
+    print("=======================")
+    print("=======================")
+    return
+
+def exibeMens( perim):
+    exibeMold()  
+    print("Perímetro: %.2f"%(perim))
+    exibeMold()
+    return
+
+def saoNaoColineares(xA,yA,xB,yB,xC,yC):
+    # funções booleanas (predicado) --> calcular qq coisa cujo resultado
+    # retorna True ou False
+    DP = xA*yB  +  yA*xC  +  xB*yC
+    DS = yA*xB  +  xA*yC  +  yB*xC
+    return DP - DS != 0
+    
+#bloco principal
+print("Coordenadas do ponto A")
+xA=float(input('x? '))
+yA=float(input('y? '))
+
+print("Coordenadas do ponto B")
+xB=float(input('x? '))
+yB=float(input('y? '))
+
+print("Coordenadas do ponto C")
+xC=float(input('x? '))
+yC=float(input('y? '))
+if  saoNaoColineares(xA,yA,xB,yB,xC,yC)==True:
+    perim = calcPerimetro(xA,yA,xB,yB,xC,yC)
+    exibeMens(perim)
+    print('Terminou')
+else: 
+    resposta= input('os dados não formam um triangulo, gostaria de refazer? ')
+    while resposta.lower() in ['sim','s','ss']:
+        print("Coordenadas do ponto A")
+        xA=float(input('x? '))
+        yA=float(input('y? '))
+
+        print("Coordenadas do ponto B")
+        xB=float(input('x? '))
+        yB=float(input('y? '))
+
+        print("Coordenadas do ponto C")
+        xC=float(input('x? '))
+        yC=float(input('y? '))
+        if  saoNaoColineares(xA,yA,xB,yB,xC,yC)==True:
+            perim = calcPerimetro(xA,yA,xB,yB,xC,yC)
+            exibeMens(perim)
+            print('Terminou')
+            break;
+        else: 
+            resposta= input('os dados não formam um triangulo, gostaria de refazer?')
