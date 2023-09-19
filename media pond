@@ -1,0 +1,39 @@
+def calcMedPonderada (nt1,p1,nt2,p2):
+    med= ((nt1*p1)+(nt2*p2))/(p1+p2)
+    return med
+def exibeLinha():
+    print("=======================")
+    return
+def exibeMold( ):
+    exibeLinha()
+    exibeLinha()
+    return
+print("Dados do Aluno")
+nome=input('Nome? ')
+p1=float(input('P1? '))
+p2=float(input('P2? '))
+t1=float(input('Trab1? '))
+t2=float(input('Trab2? '))
+mProv = calcMedPonderada(p1,2,p2,5)
+mTrab = calcMedPonderada(t1,2,t2,4)
+mFinal = calcMedPonderada(mProv,3,mTrab,4)
+if mFinal >= 9:
+    exibeMold()
+    print("Nome: %s"%(nome))
+    print("Médias   Prova: %.2f \n\t Trabalhos: %.2f\n\t Final: %.2f"%(mProv,mTrab,mFinal))
+    print('parabéns foi aprovado! quer ser monitor??')
+    exibeMold()
+elif mFinal >= 5:
+    exibeMold()
+    print("Nome: %s"%(nome))
+    print("Médias   Prova: %.2f \n\t Trabalhos: %.2f\n\t Final: %.2f"%(mProv,mTrab,mFinal))
+    print('Parabéns! Foi aprovado!!')
+    exibeMold()
+else:
+    exibeMold()
+    print("Nome: %s"%(nome))
+    print("Médias   Prova: %.2f \n\t Trabalhos: %.2f\n\t Final: %.2f"%(mProv,mTrab,mFinal))
+    print('vish kkkkk ')
+    exibeMold()
+
+
