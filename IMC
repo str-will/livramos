@@ -1,0 +1,21 @@
+nome = input('qual o seu nome?')
+idade =int(input('qual a sua idade?'))
+altura =float(input('qual a sua altura?'))
+peso =float(input('qual o seu peso ?'))
+IMC = peso/(altura*altura)
+
+#Envia uma mensagem de alerta para quem está abaixo do peso ideal de acordo com a tabela
+if IMC <= 18.5:
+    print('se liga hein! ta abaixo do peso ideal')
+    #e se for menor de idade também uma mensagem para os pais
+    if idade <= 17:
+        print('responsavel!! paga um almoço pra essa criança pf ')
+        #Envia uma mensagem de alerta para os menores de idade que estão abaixo do peso ideal
+        print('SE LIGA CRIANÇA! ')
+  # Envia uma mensagem de alerta para quem está abaixo ou acima do peso ideal
+elif IMC <=18.5 or IMC >= 25:
+    print('ta fora do peso ideal hein!')
+#Envia uma mensagem de alerta para os menores de idade que estão abaixo do peso 
+#ou para qualquer um que esteja acima do peso ideal
+elif IMC >=25 or (idade <18 and IMC<=18.5):
+    print ('ta fora do peso ideal!! se liga')
