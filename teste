@@ -1,0 +1,27 @@
+# https://brasilescola.uol.com.br/matematica/reducao-ao-primeiro-quadrante-no-ciclo-trigonometrico.htm
+#Avise caso o ângulo  esteja no primeiro quadrante
+#Avise caso o ângulo  esteja no primeiro quadrante ou não esteja no 1º quadrante
+#Reduza ao 1º quadrante
+# 2-->1: 180-ang2
+# 3-->1: ang3-180
+# 4--> 1: 360 -ang4
+ 
+#funções 
+def convert_graus_rad(graus):
+    rad= graus * 0.017453
+    return rad 
+def convert_rad_grados(rad):
+    grados= rad * 0.01570795
+    return grados
+def quadrante(graus):
+    return 
+
+#bloco principal
+graus = int(input('coloque a medida em graus do seu algulo:'))
+rad= convert_graus_rad(graus)
+grados= convert_rad_grados(rad)
+print('tem %d graus que são %f radianos que são %f grados'%(graus,rad, grados))
+
+if graus:
+    else:
+
