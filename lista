@@ -1,0 +1,24 @@
+"""Dados o dia, mês e ano de uma data é possível calcular o dia da semana desta data do seguinte modo:
+1) a = (14 - Mes) // 12
+2) y = Ano - a
+3) m = Mes + 12a - 2
+4) q = Dia + 31m//12 + y + y//4 - y//100 + y//400
+5) d = q % 7 (resto da divisão por 7)"""
+
+#faça a função NumeroDiadaSemana que recebe um dia, um mês e um ano e retorna o número do
+#dia da semana calculado conforme descrito acima. (número entre 0 e 6)
+
+def Num_dia_Sem (dia,mes,ano):
+    a= (14 - mes) -2 
+    m= mes + (12*a) - 2   
+    q= a + m + dia 
+    d= q%7
+    if d==0:
+        return 'domingo'
+    elif d==1:
+        return'segunda'
+    elif d==2:
+        return'terça'
+    elif d
+    
+    
