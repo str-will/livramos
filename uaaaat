@@ -1,0 +1,28 @@
+#funcao
+def montar_linha(numero,simbolo):
+    montagem=numero*str(simbolo)
+    print (montagem)
+    return 
+
+def monta_fracao(denom,numera):
+    fracao= denom/numera 
+    x=input('%.1d/%.1d = %.2f'%(denom,numera,fracao))
+    return x
+
+def Exibe_respostas( fracao1, fracao2):
+   simbolo= '='
+   numero1= len(fracao1)
+   numero2=len(fracao2)
+   numero3= (numero1+numero2)/2
+   print(fracao1)
+   montar_linha(numero3, simbolo)
+   print(fracao2)
+   return 
+#bloco principal
+
+denom1 = int(input('coloque um numero '))
+numera2= int(input('coloque outro numero '))
+fracao1=monta_fracao(denom1, numera2)
+fracao2=monta_fracao(numera2, denom1)
+Exibe_respostas(fracao1, fracao2)
+
