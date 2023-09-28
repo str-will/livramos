@@ -1,0 +1,22 @@
+"""Escreva uma função que recebe uma string X e retorne uma string Y criada do seguinte modo:
+ Se o primeiro caratere da string X for uma letra maiúscula: Gera a string Y colocando ‘*’ na frente, no
+meio e no final da string X
+ Nos demais casos: Gera a string Y sem o 1º caractere da string X"""
+ 
+def Convert_string(x):
+    meio=len(x)//2
+    if x[0]>='a' and x[0]<='z':
+        y= '#'+x[:meio]+'#'+x[meio:]+'#'
+    elif x[0]>='A' and x[0]<='Z':
+        y= '*'+x[:meio]+'*'+x[meio:]+'*'
+    else:
+        y= x[1:]
+    return y 
+
+repeticao= 0 
+textos= int(input('quantos textos voce deseja? '))
+while textos>repeticao:
+    repeticao= repeticao+1
+    x=input('escreva o seu texto ')
+    y= Convert_string(x)
+    print('seu novo texto %s'%(y))
