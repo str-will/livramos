@@ -1,0 +1,39 @@
+#funcao
+def sensacaoTermica(temp,vel):
+    st = 33+(10*vel**0.5+10.45-vel)* ((temp-33)/22)
+    return st
+
+
+#VARIAVEIS para o while 
+vezes=0
+contaQuente= 0 
+velocidade=0
+somaST=0
+velSoma = 0
+
+#bloco principal
+x= int(input('quantas medições?'))
+while vezes< x:
+    vezes= vezes+1 
+    print ("\n===>Hora: %d"%(vezes))
+    temp = float(input('Temperatura? '))
+    vel = float(input('Velocidade do Vento? '))
+    velSoma = velSoma+vel 
+    if vel< 10:
+        velocidade= velocidade+1
+    st = sensacaoTermica(temp,vel)
+    print('\nSensação térmica equivalente: %.2f '%(st))
+    if st> temp:
+        contaQuente= contaQuente+1
+    somaST= somaST+st
+
+percentual=(contaQuente*100)/vezes
+media_st= somaST/vezes 
+media_vel=velSoma/vezes
+
+#Mostrar resultados 
+print('\n===>fim')
+print('%d quantidade de vezes que a sensação termica foi maior que a temperatura'%(contaQuente))
+print('%d porcentagem de vezes que a sensação termica foi maior que a temperatura'%percentual)
+print('%d quantidade de vezes que a velocidade do vento foi inferior a 10km/h'%(velocidade))
+
