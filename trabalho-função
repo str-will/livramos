@@ -1,18 +1,25 @@
-a)	Escreva uma função booleana chamada ehCongruenteModuloM que receba três números positivos, x, y e m e retorne True se  x é congruente a y módulo m ( x ≡ y(mod m)) ou False, caso contrário
-b)	Escreva uma função chamada sorteiaValorNoIntervalo que receba dois números positivos representando o início e fim de um intervalo e retorne um valor aleatoriamente gerado neste intervalo. (use a função randint do módulo random) 
-c)	Escreva uma função chamada verificaCongruência que receba três números positivos, x, y e m, e exiba x, y e m e uma das seguintes mensagens:
-•	se x é congruente a y módulo m ( x ≡ y(mod m))):
-“x é congruente a y módulo m “
-•	se x não é congruente a y módulo m:
-mostre um valor próximo de y que é congruente a x, módulo m  
- (delta=x%m -y%m)
-Observação: utilize, obrigatoriamente, a função ehCongruenteModuloM.
+#modulos 
+import random
 
-d)	Escreva um programa que, utilizando as funções sorteiaValorNoIntervalo e verificaCongruência,  sorteia aleatoriamente dois valores (x e y) entre 10 e 90 e um valor entre 2 e 9 (m). Mostre se os valores x e y sorteados são congruentes módulo m ou um valor próximo de y que é congruente módulo m  a x
-Exemplos de saídas de seu programa (em vermelho):
+#funções 
+def ehCongruenteModuloM (x,y,m):
+     return  x%m == y%m
 
-x:33 y:83 m:5
-x é congruente a y módulo m 
+def sorteiaValorNoIntervalo(x,y):
+  return random.randint(x,y)
 
-x:19 y:59 m:7
-Um valor próximo de y congruente a x, módulo m:61
+def verificaCongruência(x,y,m):
+   congruente= ehCongruenteModuloM(x, y, m)
+   if congruente:
+       print('x é congruente a y modulo m ')
+   else:
+       delta= x%m - y%m
+       print(f'o valor mais próximo de x ≡ y(mod m) é {delta}')
+   return
+
+ # Bloco principal 
+ 
+x=sorteiaValorNoIntervalo(10, 90)
+y= sorteiaValorNoIntervalo(10, 90)
+m =sorteiaValorNoIntervalo(2, 9)
+verificaCongruência(x, y, m)
