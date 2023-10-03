@@ -1,0 +1,40 @@
+#import 
+import random 
+
+#função 
+
+def DescobreDesconto (x):
+   if int(x[6:]) < 1970: 
+       desc=0.8
+       print('seu valor de desconto é de 20%')
+   elif int(x[6:]) >1970 and int(x[6:]) <= 2000:
+       if int(x[6:])% 2 != 0:
+          i= random.randint(1,4)
+          desc=1-(i*int(x[3:5])/100)
+          print(f'o valor de desconto é igual a {desc}%')
+       else:
+          j=random.randint(1,5)
+          desc= 1-(j*int(x[3:5])/100)
+          print(f'o valor de desconto é igual a {desc}%')
+   elif  int(x[6:]) >2001 and int(x[6:]) <= 2017:
+        if int(x[3:5]) == 12:
+            desc= 10/100
+            print(' o valor de desconto será de 10%') 
+        else:
+            desc=5/100
+            print('o valor de desconto será de 5%')
+   else:
+       desc=0
+       print(' este produto não possui desconto algum')
+   return desc 
+
+#bloco principal 
+
+
+passagem=float(input('qual o valor da passagem de avião desejada?'))
+x= input('qual a sua data de nascimento')
+
+passagem_desc= DescobreDesconto(x)*passagem 
+desc_val= passagem-passagem_desc 
+
+print(f'valor do desconto: {desc_val:.2f} \nPreço final da passagem: {passagem_desc:.2f}')
