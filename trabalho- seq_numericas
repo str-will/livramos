@@ -1,0 +1,31 @@
+#função
+def processaNumPentagonais(n,m):
+  soma=0
+  mult=0 
+  while n <= m :
+        p=(3 * n**2- n )/2
+        print(f'o{n}º numero pentagonal é {p}')
+        if p%7==0:
+         soma +=p 
+         mult +=1
+        n+=1
+  media= soma/mult
+  print(f'a media dos multiplos de 7 é {media:.2f}')         
+    
+     
+
+#bloco principal
+
+"""n=int(input('coloque um inteiro '))
+m=int(input('coloque outro inteiro'))
+processaNumPentagonais(n, m) """
+
+#n=2
+#m=7
+print(processaNumPentagonais(2, 7))
+
+
+#n=5 
+#m=20
+print(processaNumPentagonais(5, 20))
+
