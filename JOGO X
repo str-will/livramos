@@ -23,27 +23,29 @@ ganha que tem a maior soma total de pontos (soma de pontos de todas as rodadas)
 #JOGO XXX
 
 #METODOS
-import random 
-#FUNÇOES
-def jogador_rodadas(rodadas):  
-   rodada_conta=0
-   soma_rodada=0
-   rodada_atual=+1
-   algarismos_conta=0
-   while rodada_conta<=rodadas:
-     while algarismos_conta<=rodada_atual:       
-       pontos_jogador=random.randint(1, 5)
-       soma_rodada=soma_rodada+pontos_jogador
-       algarismos_conta=+1
-   rodadas_conta=+1
-   return
-       
+import random
 
-     
-    
-    
-    
-    
+def repeteRand (repeticoesRand):
+    somaPontos = 0
+    jafiz = 0
+    while jafiz < repeticoesRand:
+        ponto_jogador = random.randint(1, 5)
+        somaPontos += 
+        jafiz += 1 
+        print(ponto_jogador)
+        return 
+        
     
 #BLOCO PRINCIPAL
-rodadas=input('quantas rodadas voce quer jogar?')
+rodadas=int(input('quantas rodadas voce quer jogar?'))
+
+repeticoesRand = 0
+repeticoes =0
+soma_rodada=0
+rodada_atual=+1
+algarismos_conta=0
+while repeticoes < rodadas:
+    repeticoesRand += 1
+    repeteRand(repeticoesRand)
+    repeticoes += 1 
+    
